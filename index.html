@@ -9,6 +9,11 @@
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    if (window.location.search == "?open=true") {
+        document.write("<style>.closed-door, .right-door, .left-door { display: none !important; } .opened-door { display: block !important; }</style>");
+    }
+    </script>
     <title>Trapped - The Movie</title>
 </head>
 

@@ -1,0 +1,269 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #627377;
+}
+
+/* Door Animation */
+
+.door {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.closed-door {
+    display: block;
+}
+
+.right-door,
+.left-door,
+.opened-door {
+    display: none;
+}
+
+.closed-door,
+.right-door,
+.left-door {
+    z-index: 30;
+}
+
+.opened-door {
+    z-index: 10;
+}
+
+/* Home Page */
+
+h1,
+.buttons {
+    position: relative;
+    z-index: 20;
+}
+
+h1 {
+    font-family: "Henny Penny", system-ui;
+    font-size: 150px;
+    font-weight: bold;
+    color: #38322e;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: fit-content;
+    margin: -30px auto 0;
+}
+
+.buttons a {
+    font-family: "Henny Penny", system-ui;
+    font-size: 30px;
+    color: #754f42;
+    text-decoration: none;
+    padding: 20px 100px;
+    border: 2px solid #754f42;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons a:hover {
+    color: #4a3027;
+    border-color: #4a3027;
+    background-color: #576668;
+}
+
+/* Pages Door Frame */
+
+.frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#Tabs,
+.fragments,
+video,
+.team,
+.back {
+    position: relative;
+    z-index: 2;
+}
+
+/* About Page */
+
+#Tabs {
+    font-family: "Irish Grover", system-ui;
+    font-size: 50px;
+    color: #48413C;
+    text-align: center;
+    margin: 115px auto 0;
+    padding: 10px 200px;
+    width: fit-content;
+    border: 5px solid #5B5750;
+    border-radius: 8px;
+    background-color: #A59075;
+}
+
+.fragments {
+    position: relative;
+    top: -30px;
+    max-width: 750px;
+    margin: 30px auto;
+    font-family: "Nova Cut", system-ui;
+    font-size: 18px;
+    color: #273234;
+}
+
+.fragments p {
+    margin: 52px 0;
+}
+
+.fragments .left {
+    text-align: left;
+}
+
+.fragments .right {
+    text-align: right;
+}
+
+.fragments .center {
+    font-size: 22px;
+    color: #492C1D;
+    text-align: center;
+}
+
+.fragments .middle-arrows {
+    font-size: 25px;
+    color: #4a3027;
+    text-align: center;
+    margin: -35px 0;
+    line-height: 1;
+    transform: scaleX(3);
+}
+
+.fragments .left-arrows {
+    font-size: 25px;
+    color: #4a3027;
+    text-align: left;
+    margin: -35px 0;
+    padding-left: 320px;
+    line-height: 1;
+    transform: scaleX(3);
+}
+
+.fragments .right-arrows {
+    font-size: 25px;
+    color: #4a3027;
+    text-align: right;
+    margin: -35px 0;
+    padding-right: 340px;
+    line-height: 1;
+    transform: scaleX(3);
+}
+
+/* The Team Page */
+
+.team {
+    max-width: 450px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.left-icon {
+    position: absolute;
+    left: -90px;
+    transform: translateY(-30px);
+}
+
+.right-icon {
+    position: absolute;
+    right: -90px;
+    transform: translateY(-30px);
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+}
+
+.Text {
+    font-family: "Nova Cut", system-ui;
+    font-size: 22px;
+    color: #273234;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.Subtext {
+    font-family: "Nova Cut", system-ui;
+    font-size: 20px;
+    color: #524744;
+}
+
+.left,
+.right {
+    margin: 70px 0;
+}
+
+.left {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.right {
+    text-align: right;
+    padding-right: 70px;
+}
+
+/* Watch Page */
+
+video {
+    width: 550px;
+    height: 92vh;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Back Button */
+
+.back {
+    font-family: "Nova Cut", system-ui;
+    font-size: 18px;
+    background-color: #627377;
+    color: #754f42;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #754f42;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.back:hover {
+    color: #4a3027;
+    border-color: #4a3027;
+    background-color: #576668;
+}
